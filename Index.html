@@ -1,65 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página clon eBay Devf </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header, nav, footer {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ccc;
-        }
-        main {
-            padding: 10px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-        .card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            width: 150px;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Tienda de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Página clon eBay Dev f</h1>
+        <h1>Tienda de Mascotas</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <p>Inicio | Categorías | Contacto</p>
-    </nav>
-    <main>
-        <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Producto 1">
-            <h3>Iphone 17 pro max</h3>
-            <p>4 camaras.</p>
-            <p>$20,0000 Sheintavos</p>
+
+    <section id="productos" class="section">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="https://m.media-amazon.com/images/I/71I-C3nBYgL.jpg" alt="Juguete para perro">
+                <h3>Juguete para perro</h3>
+                <p>Un divertido juguete para tu mascota.</p>
+                <p><strong>Precio:</strong> $150</p>
+            </div>
+            <div class="producto">
+                <img src="https://biogato.mx/wp-content/uploads/2023/08/Img_5kg_amazon01.png" alt="Arena para gato">
+                <h3>Arena para gato</h3>
+                <p>Arena premium para la comodidad de tu gato.</p>
+                <p><strong>Precio:</strong> $100</p>
+            </div>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Producto 2">
-            <h3>PC Gamer </h3>
-            <p>200 mpx, 12 gb ram.</p>
-            <p>$15,000 Sheintavos</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/100" alt="Producto 3">
-            <h3>Terreno</h3>
-            <p>Barato.</p>
-            <p>$200,000 Sheintavos</p>
-        </div>
-    </main>
+    </section>
+
+    <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <p>Ofrecemos servicios de baño, corte de uñas, y más para el cuidado de tus mascotas.</p>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Dirección: </p>
+        <p>Teléfono: </p>
+        <p>Email: </p>
+    </section>
+
     <footer>
-        <p>Derechos reservados</p>
+        <p>&copy; 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
