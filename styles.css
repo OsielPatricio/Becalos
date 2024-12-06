@@ -7,6 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -34,11 +36,16 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .section {
     padding: 2em;
     text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    margin: 1em 2em;
+    border-radius: 8px;
 }
 
 h2 {
@@ -59,12 +66,24 @@ h2 {
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 }
 
 .producto img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+.producto h3 {
+    color: #444;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.producto p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    color: #666;
 }
 
 footer {
@@ -73,4 +92,5 @@ footer {
     padding: 1em;
     text-align: center;
     margin-top: 2em;
+    font-size: 0.9em;
 }
