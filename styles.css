@@ -16,14 +16,15 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+        background-color: #4CAF50;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 }
 
 header h1 {
