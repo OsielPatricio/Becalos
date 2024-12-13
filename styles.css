@@ -51,7 +51,6 @@ nav ul li a:hover {
     color: #dcdcdc;
 }
 
-
 .section {
     padding: 2em;
     text-align: center;
@@ -70,7 +69,6 @@ h2 {
     margin-bottom: 1em;
 }
 
-
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -78,7 +76,6 @@ h2 {
     max-width: 900px;
     margin: 0 auto;
 }
-
 
 .producto {
     border: 1px solid #ddd;
@@ -117,7 +114,6 @@ h2 {
     color: #666;
 }
 
-
 footer {
     background-color: #333;
     color: white;
@@ -127,7 +123,6 @@ footer {
     margin-top: 2em;
 }
 
-
 .section ul {
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +131,6 @@ footer {
     align-items: center;
     list-style: none;
 }
-
 
 form {
     display: flex;
@@ -168,6 +162,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
 .menu-toggle {
     display: none;
     background: transparent;
@@ -180,20 +175,94 @@ button:hover {
     cursor: pointer;
 }
 
+/* Responsividad para dispositivos pequeños */
 @media (max-width: 768px) {
+    /* Menú de navegación: convertir en menú desplegable */
     nav ul {
-        display: none; /* Ocultar el menú*/
+        display: none; /* Ocultar el menú por defecto */
         flex-direction: column;
         align-items: center;
         gap: 1em;
     }
 
     .menu-toggle {
-        display: block; /* Mostrar el botón de menú*/
+        display: block; /* Mostrar el botón de menú hamburguesa */
     }
 
-    /* Mostrar el menú */
+    /* Mostrar el menú cuando el botón hamburguesa es clickeado */
     nav.active ul {
         display: flex;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reducir el tamaño del título en dispositivos pequeños */
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr 1fr; /* Cambiar a dos columnas en pantallas más pequeñas */
+    }
+
+    .producto {
+        max-width: 90%;
+        margin: 0 auto; /* Centrar los productos en la pantalla */
+    }
+
+    .section {
+        padding: 1.5em; /* Reducir padding en dispositivos pequeños */
+    }
+
+    footer {
+        font-size: 0.8em; /* Reducir el tamaño de fuente en el footer */
+    }
+
+    /* Formularios */
+    form {
+        padding: 1em;
+        max-width: 300px; /* Reducir el tamaño del formulario */
+    }
+
+    input, textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+/* Responsividad para pantallas más grandes */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3em; /* Aumentar el tamaño del título en pantallas grandes */
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(4, 1fr); /* Mostrar 4 columnas en pantallas grandes */
+    }
+
+    .producto {
+        padding: 1.5em; /* Aumentar el padding en productos */
+    }
+
+    .section {
+        padding: 3em; /* Aumentar el padding en secciones */
+    }
+
+    footer {
+        font-size: 1em; /* Aumentar el tamaño de fuente en el footer */
+    }
+
+    form {
+        max-width: 500px; /* Aumentar el tamaño máximo del formulario */
+    }
+
+    input, textarea {
+        font-size: 1.1em;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 12px 18px;
     }
 }
